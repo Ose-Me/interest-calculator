@@ -1,34 +1,31 @@
 const interest = (data) => {
   let savings = 0;
   let interestAmount = 0;
-  if (data.plan === "flexNaira") {
-    interestAmount = data.amount * data.duration * 10;
-  }
+  console.log(data);
+  interestAmount =
+    (data.amount * data.duration * data.rate) / (100 * data.durationType);
   savings = data.amount + interestAmount;
-
-  console.log(interestAmount);
-  console.log(savings);
-  return savings;
+  return { savings, interestAmount };
 };
 
 function getData(e) {
   e.preventDefault();
-  var amount = document.getElementById("amount").value;
-  var duration = document.getElementById("duration").value;
-  var plan = document.getElementById("plan").value;
+  var amount = parseFloat(document.getElementById("amount").value);
+  var duration = parseFloat(document.getElementById("duration").value);
+  var durationType = parseFloat(document.getElementById("duration-type").value);
+  var rate = parseFloat(document.getElementById("rate").value);
 
   let data = {
     amount: amount,
     duration: duration,
-    plan: plan,
+    durationType: durationType,
+    rate: rate,
   };
 
   var result = interest(data);
   console.log(result);
-  if (result) {
-    document.getElementById("savings-amount").value = data.amount;
-    document.getElementById("savings").value = result;
-  }
+  document.getElementById("profit").innerHTML = result.interestAmount;
+  document.getElementById("earnings").innerHTML = result.savings;
 }
 
 document

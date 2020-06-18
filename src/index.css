@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  display: block;
-  height: 100%;
-}
-
 body {
   position: relative;
   margin: 0;
@@ -19,37 +13,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#background {
-  position: absolute;
+.navbar-brand img {
+  height: 50px;
+}
+
+.form-control {
+  padding: .7rem .8rem;
+}
+
+.background-fill {
+  position: fixed;
+  opacity: 0.1;
   right: 0;
-  width: 500px;
-}
-
-.input-section {
-  padding: 80px 0;
-}
-
-.result {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  border: none;
-  min-width: 500px;
-  height: 300px;
-  box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.1);
-}
-
-.card-title {
-  font-size: 3rem;
-}
-
-.card-text {
-  line-height: 180%;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  padding: 40px;
+  max-width: 500px;
 }
