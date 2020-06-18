@@ -24,8 +24,10 @@ function getData(e) {
 
   var result = interest(data);
   console.log(result);
-  document.getElementById("profit").innerHTML = result.interestAmount;
-  document.getElementById("earnings").innerHTML = result.savings;
+  document.getElementById("profit").innerHTML = result.interestAmount.toFixed(
+    2
+  );
+  document.getElementById("earnings").innerHTML = result.savings.toFixed(2);
 }
 
 document

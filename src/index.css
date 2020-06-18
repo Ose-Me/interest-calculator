@@ -18,7 +18,7 @@ body {
 }
 
 .form-control {
-  padding: .7rem .8rem;
+  padding: 0.7rem 0.8rem;
 }
 
 .background-fill {
@@ -26,4 +26,33 @@ body {
   opacity: 0.1;
   right: 0;
   max-width: 500px;
+}
+
+.form-control {
+  padding: 1.25rem 1rem;
+}
+
+.custom-select {
+  height: unset;
+  padding: 0.5rem 1.75rem 0.5rem 0.75rem;
+}
+
+.btn-primary {
+  background-color: #083e9e;
+  border-color: #083e9e;
+}
+
+.btn-primary:hover {
+  background-color: rgb(4, 35, 88);
+  border-color: #083e9e;
+}
+
+.btn-outline-primary {
+  color: #083e9e;
+  border-color: #083e9e;
+}
+
+.btn-outline-primary:hover {
+  background-color: #083e9e;
+  border-color: #083e9e;
 }
