@@ -17,6 +17,11 @@ body {
   height: 50px;
 }
 
+.image {
+  margin-top: -3.5rem;
+  width: 100%;
+}
+
 .form-control {
   padding: 0.7rem 0.8rem;
 }
@@ -43,7 +48,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: rgb(4, 35, 88);
+  background-color: #093b92;
   border-color: #083e9e;
 }
 
