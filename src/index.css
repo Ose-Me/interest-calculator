@@ -7,8 +7,8 @@
 body {
   position: relative;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -60,4 +60,10 @@ body {
 .btn-outline-primary:hover {
   background-color: #083e9e;
   border-color: #083e9e;
+}
+
+.card-sub-heading {
+  color: #083e9e;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
