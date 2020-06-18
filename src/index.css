@@ -13,6 +13,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.top-link {
+  color: #083e9e !important;
+  padding: 0 20px;
+  font-weight: 600;
+}
+
 .navbar-brand img {
   height: 50px;
 }
